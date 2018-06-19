@@ -1,4 +1,4 @@
-var elvishGirl =
+var elvishFemale =
 
 ["Aelene",
 "Aelinor",
@@ -30,11 +30,11 @@ var elvishGirl =
 "Caerthynna",
 "Calarel",
 "Cauladra",
-"Celebr�an",
+"Celebrían",
 "Chandrelle",
 "Chasianna",
 "Chichlandra",
-"Chin�nesstre",
+"Chin’nesstre",
 "Chomylla",
 "Ciyradyl",
 "Daealla",
@@ -109,7 +109,7 @@ var elvishGirl =
 "Liluth",
 "Llamryl",
 "Lorelei",
-"L�thien",
+"Lúthien",
 "Lyraesel",
 "Maaleshiira",
 "Maegelle",
@@ -201,12 +201,23 @@ var elvishGirl =
 "Zeale",
 "Zhuirentel"]
 
-var name = "";
-var index = Math.floor((Math.random() * 200) + 1);
-name = elvishGirl[index];
-console.log(name);
+function elvishFemaleGenerator() {
+  var name = "";
+  var arr = [];
+  var index = 0;
 
-var elvishBoy =
+  for(var i = 0; i < 3; i++) {
+    index = Math.floor((Math.random() * 200) + 1);
+    name = elvishFemale[index];
+    arr.push(name);
+  }
+  return arr;
+}
+
+console.log(elvishFemaleGenerator());
+
+
+var elvishMale =
 
 ["Aego",
 "Aelrindel",
@@ -409,10 +420,20 @@ var elvishBoy =
 "Zabbas",
 "Zaltarish"]
 
-var name = "";
-var index = Math.floor((Math.random() * 200) + 1);
-name = elvishBoy[index];
-console.log(name);
+function elvishMaleGenerator() {
+  var name = "";
+  var arr = [];
+  var index = 0;
+
+  for(var i = 0; i < 3; i++) {
+    index = Math.floor((Math.random() * 200) + 1);
+    name = elvishMale[index];
+    arr.push(name);
+  }
+  return arr;
+}
+
+console.log(elvishMaleGenerator());
 
 var elvishSurname =
 
@@ -617,7 +638,17 @@ var elvishSurname =
 "Wolfspeak",
 "Yrauos"]
 
-var name = "";
-var index = Math.floor((Math.random() * 200) + 1);
-name = elvishSurname[index];
-console.log(name);
+function elvishSurnameGenerator() {
+  var name = "";
+  var arr = [];
+  var index = 0;
+
+  for(var i = 0; i < 3; i++) {
+    index = Math.floor((Math.random() * 200) + 1);
+    name = elvishSurname[index];
+    arr.push(name);
+  }
+  return arr;
+}
+
+console.log(elvishSurnameGenerator());
